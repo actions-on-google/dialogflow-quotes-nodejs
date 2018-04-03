@@ -1,0 +1,5 @@
+node_modules
+*.DS_store
+npm-debug.log
+.firebaserc
+package-lock.json
