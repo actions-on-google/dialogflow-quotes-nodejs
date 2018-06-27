@@ -8,9 +8,13 @@ This sample shows an app for the Google Assistant using Actions on Google that p
 
 **Note: This sample uses Firebase Cloud Functions to make an HTTP request to a non-Google service. The free Firebase Spark Plan only allows outbound network calls to Google services. If you plan to run the sample, you will need to temporarily [upgrade to a Firebase plan that allows for outbound networking](https://firebase.google.com/pricing), such as the Blaze Plan (Pay as you go.).**
 
-1. Use the [Actions on Google Console](https://console.actions.google.com) to add a new project with a name of your choosing.
-1. Under *Build a custom app*, click *BUILD* in the Dialogflow box and then click *Create Actions on Dialogflow*.
-1. Click *Save* to save the project.
+1. Use the [Actions on Google Console](https://console.actions.google.com) to add a new project with a name of your choosing and click *Create Project*.
+1. Click *Skip*, located on the top right to skip over category selection menu.
+1. On the left navigation menu under *BUILD*, click on *Actions*. Click on *Add Your First Action* and choose your app's language(s).
+1. Select *Custom intent*, click *BUILD*. This will open a Dialogflow console. Click *CREATE*.
+1. Click on the gear icon to see the project settings.
+1. Select *Export and Import*.
+1. Select *Restore from zip*. Follow the directions to restore from the `agent.zip` file in this repo.
 1. Deploy the fulfillment webhook provided in the functions folder using [Google Cloud Functions for Firebase](https://firebase.google.com/docs/functions/):
    1. Follow the instructions to [set up and initialize Firebase SDK for Cloud Functions](https://firebase.google.com/docs/functions/get-started#set_up_and_initialize_functions_sdk). Make sure to select the project that you have previously generated in the Actions on Google Console and to reply `N` when asked to overwrite existing files by the Firebase CLI.
    1. Run `firebase deploy --only functions` and take note of the endpoint where the fulfillment webhook has been published. It should look like `Function URL (quotes): https://${REGION}-${PROJECT}.cloudfunctions.net/quotes`
