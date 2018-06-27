@@ -22,7 +22,7 @@ const {
 const functions = require('firebase-functions');
 const fetch = require('isomorphic-fetch');
 
-const URL = 'https://raw.githubusercontent.com/actions-on-google/dialogflow-quotes-nodejs/blob/master/quotes.json';
+const URL = 'https://raw.githubusercontent.com/actions-on-google/dialogflow-quotes-nodejs/master/quotes.json';
 const BACKGROUND_IMAGE = 'https://lh3.googleusercontent.com/t53m5nzjMl2B_9Qhwc81tuwyA2dBEc7WqKPlzZJ9syPUkt9VR8lu4Kq8heMjJevW3GVv9ekRWntyqXIBKEhc5i7v-SRrTan_=s688';
 
 const app = dialogflow({debug: true});
