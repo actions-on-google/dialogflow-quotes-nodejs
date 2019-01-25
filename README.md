@@ -9,7 +9,7 @@ This sample shows an app for the Google Assistant using Actions on Google that p
 **Note: This sample uses Firebase Cloud Functions to make an HTTP request to a non-Google service. The free Firebase Spark Plan only allows outbound network calls to Google services. If you plan to run the sample, you will need to temporarily [upgrade to a Firebase plan that allows for outbound networking](https://firebase.google.com/pricing), such as the Blaze Plan (Pay as you go.).**
 
 1. Use the [Actions on Google Console](https://console.actions.google.com) to add a new project with a name of your choosing and click *Create Project*.
-1. Click *Skip*, located on the top right to skip over category selection menu.
+1. Scroll down to the *More Options* section, and click on the *Conversational* card.
 1. On the left navigation menu under *BUILD*, click on *Actions*. Click on *Add Your First Action* and choose your app's language(s).
 1. Select *Custom intent*, click *BUILD*. This will open a Dialogflow console. Click *CREATE*.
 1. Click on the gear icon to see the project settings.
