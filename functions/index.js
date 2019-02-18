@@ -17,7 +17,7 @@ const {
   dialogflow,
   BasicCard,
   Image,
-  SimpleResponse,
+  SimpleResponse
 } = require('actions-on-google');
 const functions = require('firebase-functions');
 const fetch = require('isomorphic-fetch');
