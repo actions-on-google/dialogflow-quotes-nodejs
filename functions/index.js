@@ -63,4 +63,4 @@ app.intent('Default Welcome Intent', (conv) => {
     });
 });
 
-exports.quotes = functions.https.onRequest(app);
+exports.dialogflowFirebaseFulfillment = functions.https.onRequest(app);
